@@ -6,6 +6,15 @@ Inspired by [awesome-deep-vision](https://github.com/kjw0612/awesome-deep-vision
 [awesome-architecture-search](https://github.com/markdtw/awesome-architecture-search), and
 [awesome-NAS](https://github.com/D-X-Y/awesome-NAS).
 
+Please feel free to [pull requests](https://github.com/YIWEI-CHEN/awesome-automated-machine-learning/pulls) 
+or [open an issue](https://github.com/YIWEI-CHEN/awesome-automated-machine-learning/issues) to add papers.
+Markdown format:
+```markdown
+- Paper Name [[pdf]](link) [[code]](link)
+  - Author 1, Author 2, Author 3. Conference Year
+```
+
+
 ## Table of Contents
 - [Automated Feature Engieerning](#automated-feature-engineering)
     - [Exploration and Reduction](#exploration-and-reduction)
