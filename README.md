@@ -79,7 +79,8 @@ Markdown format:
     - Haifeng Jin, Qingquan Song, Xia Hu. arXiv 1806
 
 ### Reinforcement Learning
-- Neural Architecture Search with Reinforcement Learning [[pdf]](https://arxiv.org/abs/1611.01578)
+- Neural Architecture Search with Reinforcement Learning 
+    [[pdf]](https://arxiv.org/abs/1611.01578)
     [[unofficial code]](https://github.com/titu1994/neural-architecture-search)
     - Barret Zoph and Quoc V. Le. ICLR 2017
 - Learning Transferable Architectures for Scalable Image Recognition 
@@ -114,7 +115,17 @@ Markdown format:
     [[pdf]](https://arxiv.org/abs/1810.13306)
     - Yao Quanming, Wang Mengshuo, Jair Escalante Hugo, Guyon Isabelle, Hu Yi-Qi, Li Yu-Feng, Tu Wei-Wei, Yang Qiang, 
       Yu Yang. arXiv 1810
-      
+
+## Test error rate on CIFAR-10
+
+|    Model   | Error (%) | GPU | Days | Params (Million) |
+| ---------- | --------- | --- | ---- | ---------------- |
+| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 800 | 21-28 | 37.4 |
+| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.65 | 450 | 3-4 | 3.3 |
+| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 1 | 0.5 | - |
+| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | 1 | 0.45 | 4.6 |
+ 
+
 ## Related Resources
 - [hibayesian/awesome-automl-papers](https://github.com/hibayesian/awesome-automl-papers)
 - [markdtw/awesome-architecture-search](https://github.com/markdtw/awesome-architecture-search)
