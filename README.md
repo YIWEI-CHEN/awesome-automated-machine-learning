@@ -28,6 +28,7 @@ Markdown format:
     - [Reinforcement Learning](#reinforcement-learning)
     - [Evolutionary Algorithm](#evolutionary-algorithm)
     - [Gradient-based Optimization](#gradient-based-optimization)
+    - [Test Performance on CIFAR-10](#test-performance-on-cifar-10)
 - [Survey](#survey)
 - [Related Resources](#related-resources)
 
@@ -108,6 +109,16 @@ Markdown format:
     [[code]](https://github.com/quark0/darts)
     - Hanxiao Liu, Karen Simonyan, Yiming Yang. ICLR 2019
 
+### Test Performance on CIFAR-10
+
+|    Model   | Error (%) | GPU | Days | Params (Million) | Comments |
+| ---------- | --------- | --- | ---- | ---------------- | -------- |
+| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 800 | 21-28 | 37.4 | |
+| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 450 | 3-4 | 27.6 | |
+| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 1 | 0.5 | - | |
+| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | 1 | 0.45 | 4.6 | |
+| [Path-Level EAS]() | 2.30 | 1 | 8.33*  | 14.3 | 200 GPU-Hours |
+ 
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
     - Thomas Elsken, Jan Hendrik Metzen, Frank Hutter. arXiv 1808
@@ -115,16 +126,6 @@ Markdown format:
     [[pdf]](https://arxiv.org/abs/1810.13306)
     - Yao Quanming, Wang Mengshuo, Jair Escalante Hugo, Guyon Isabelle, Hu Yi-Qi, Li Yu-Feng, Tu Wei-Wei, Yang Qiang, 
       Yu Yang. arXiv 1810
-
-## Test error rate on CIFAR-10
-
-|    Model   | Error (%) | GPU | Days | Params (Million) |
-| ---------- | --------- | --- | ---- | ---------------- |
-| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 800 | 21-28 | 37.4 |
-| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.65 | 450 | 3-4 | 3.3 |
-| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 1 | 0.5 | - |
-| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | 1 | 0.45 | 4.6 |
- 
 
 ## Related Resources
 - [hibayesian/awesome-automl-papers](https://github.com/hibayesian/awesome-automl-papers)
