@@ -80,19 +80,19 @@ Markdown format:
     - Haifeng Jin, Qingquan Song, Xia Hu. arXiv 1806
 
 ### Reinforcement Learning
-- Neural Architecture Search with Reinforcement Learning 
+- Neural Architecture Search with Reinforcement Learning (NAS)
     [[pdf]](https://arxiv.org/abs/1611.01578)
     [[unofficial code]](https://github.com/titu1994/neural-architecture-search)
     - Barret Zoph and Quoc V. Le. ICLR 2017
-- Learning Transferable Architectures for Scalable Image Recognition 
+- Learning Transferable Architectures for Scalable Image Recognition (NASNet)
     [[pdf]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf)
     [[nasnet]](https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet)
     - Barret Zoph, Vijay Vasudevan, Jonathan Shlens, Quoc V. Le. CVPR 2018
-- Efficient Neural Architecture Search via Parameter Sharing 
+- Efficient Neural Architecture Search via Parameter Sharing (ENAS)
     [[pdf]](http://proceedings.mlr.press/v80/pham18a.html) 
     [[code]](https://github.com/melodyguan/enas)
     - Hieu Pham, Melody Y. Guan, Barret Zoph, Quoc V. Le, Jeff Dean. ICML 2018
-- Designing Neural Network Architectures using Reinforcement Learning 
+- Designing Neural Network Architectures using Reinforcement Learning (MetaQNN) 
     [[pdf]](https://openreview.net/pdf?id=S1c2cvqee)
     [[code]](https://github.com/bowenbaker/metaqnn)
     - Bowen Baker, Otkrist Gupta, Nikhil Naik, Ramesh Raskar. ICLR 2017
@@ -111,13 +111,24 @@ Markdown format:
 
 ### Test Performance on CIFAR-10
 
-|    Model   | Error (%) | GPU | Days | Params (Million) | Comments |
-| ---------- | --------- | --- | ---- | ---------------- | -------- |
-| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 800 | 21-28 | 37.4 | |
-| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 450 | 3-4 | 27.6 | |
-| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 1 | 0.5 | - | |
-| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | 1 | 0.45 | 4.6 | |
-| [Path-Level EAS]() | 2.30 | 1 | 8.33*  | 14.3 | 200 GPU-Hours |
+|    Model   | Error (%) | GPU days | Params (Million) | Method |
+| ---------- | --------- | ------- | ---------------- | -------- |
+| [DensNet-BC]() | 3.46      | - | 25.6 | manual |
+| [PyramidNet +SD]() | 2.31 | - | 26 | manual |
+| ---------- | --------- | ------- | ---------------- | -------- |
+| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 16,800 - 22,400 | 37.4 | reinforcement |
+| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1350 - 1800 | 27.6 | reinforcement |
+| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | **0.45** | 4.6 | reinforcement |
+| [PathLevel EAS]() | 2.3 | 8.33  | 14.3 | reinforcement |
+| [Proxyless-R]() | 2.3 | ? | 5.8 | reinforcement |
+| ---------- | --------- | ------- | ---------------- | -------- |
+| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 0.5 | - | Bayesian |
+| [PNAS]() | 3.41 | 225 | **3.2** | Bayesian |
+| ---------- | --------- | ------- | ---------------- | -------- |
+| [AmoebaNet-B]() | 2.13 | ? | 34.9 | evolutionary |
+| ---------- | --------- | ------- | ---------------- | -------- |
+| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | 3.4 | gradient-based |
+| [Proxyless-G]() | **2.08** | ? | 5.7 | gradient-based |
  
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
