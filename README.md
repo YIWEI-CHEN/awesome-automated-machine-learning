@@ -78,6 +78,10 @@ Markdown format:
     [[pdf]](https://arxiv.org/abs/1806.10282)
     [[code]](https://github.com/jhfjhfj1/autokeras)
     - Haifeng Jin, Qingquan Song, Xia Hu. arXiv 1806
+- Progressive Neural Architecture Search (PNAS)
+    [[pdf]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf)
+    [[code]](https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/pnasnet.py)
+    - Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy. ECCV 2018
 
 ### Reinforcement Learning
 - Neural Architecture Search with Reinforcement Learning (NAS)
@@ -92,40 +96,50 @@ Markdown format:
     [[pdf]](http://proceedings.mlr.press/v80/pham18a.html) 
     [[code]](https://github.com/melodyguan/enas)
     - Hieu Pham, Melody Y. Guan, Barret Zoph, Quoc V. Le, Jeff Dean. ICML 2018
-- Designing Neural Network Architectures using Reinforcement Learning (MetaQNN) 
-    [[pdf]](https://openreview.net/pdf?id=S1c2cvqee)
-    [[code]](https://github.com/bowenbaker/metaqnn)
-    - Bowen Baker, Otkrist Gupta, Nikhil Naik, Ramesh Raskar. ICLR 2017
+- Path-Level Network Transformation for Efficient Architecture Search (PathLevel-EAS) 
+    [[pdf]](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf)
+    [[code]](https://github.com/han-cai/PathLevel-EAS)
+    - Han Cai, Jiacheng Yang,  Weinan Zhang, Song Han,Yong Yu. ICML 2018
     
 ### Evolutionary Algorithm
 - Large-Scale Evolution of Image Classifiers
     [[pdf]](http://proceedings.mlr.press/v70/real17a)
+    [[code]](https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet)
     - Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka Leon Suematsu, Jie Tan, Quoc V. Le, 
       Alex Kurakin. ICML 2017
+- Regularized Evolution for Image Classifier Architecture Search
+    [[pdf]](https://arxiv.org/abs/1802.01548)
+    [[code]](https://github.com/tensorflow/tpu/tree/master/models/official/amoeba_net)
+    - Esteban Real, Alok Aggarwal, Yanping Huang, Quoc V Le. AAAI 2019
     
 ### Gradient-based Optimization
 - DARTS: Differentiable Architecture Search
     [[pdf]](https://openreview.net/pdf?id=S1eYHoC5FX)
     [[code]](https://github.com/quark0/darts)
     - Hanxiao Liu, Karen Simonyan, Yiming Yang. ICLR 2019
+- ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware
+    [[pdf]](https://openreview.net/pdf?id=HylVB3AqYm)
+    [[code]](https://github.com/MIT-HAN-LAB/ProxylessNAS)
+    - Han Cai, Ligeng Zhu, Song Han. ICLR 2019
 
 ### Test Performance on CIFAR-10
+(Warning: the results are the best values directly chosen from their papers. Their testing environments might be different and unfair)
 
 |    Model   | Error (%) | GPU days | Params (Million) | Method |
 | ---------- | --------- | ------- | ---------------- | -------- |
-| [DensNet-BC]() | 3.46      | - | 25.6 | manual |
-| [PyramidNet +SD]() | 2.31 | - | 26 | manual |
+| [DensNet-BC](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | 3.46      | - | 25.6 | manual |
+| [PyramidNet +SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
+| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 3.6 | 0.5 | - | Bayesian |
+| [PNAS](http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf) | 3.41 | 225 | **3.2** | Bayesian |
 | [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 16,800 - 22,400 | 37.4 | reinforcement |
 | [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1350 - 1800 | 27.6 | reinforcement |
 | [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | **0.45** | 4.6 | reinforcement |
-| [PathLevel EAS]() | 2.3 | 8.33  | 14.3 | reinforcement |
-| [Proxyless-R]() | 2.3 | ? | 5.8 | reinforcement |
-| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 11.44 | 0.5 | - | Bayesian |
-| [PNAS]() | 3.41 | 225 | **3.2** | Bayesian |
-| [AmoebaNet-B]() | 2.13 | ? | 34.9 | evolutionary |
+| [PathLevel EAS](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf) | 2.3 | 8.33  | 14.3 | reinforcement |
+| [LargeEvoNet](http://proceedings.mlr.press/v70/real17a) | 5.4 | ? | 5.4 | evolutionary |
+| [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | ? | 34.9 | evolutionary |
 | [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | 3.4 | gradient-based |
-| [Proxyless-G]() | **2.08** | ? | 5.7 | gradient-based |
- 
+| [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
+ * The best result only appears in the arXiv v2.
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
     - Thomas Elsken, Jan Hendrik Metzen, Frank Hutter. arXiv 1808
@@ -139,4 +153,6 @@ Markdown format:
 - [markdtw/awesome-architecture-search](https://github.com/markdtw/awesome-architecture-search)
 - [AutoML.org/Literature on Neural Architecture Search](https://www.ml4aad.org/automl/literature-on-neural-architecture-search/)
 - [D-X-Y/awesome-NAS](https://github.com/D-X-Y/awesome-NAS)
+- [weiaicunzai/awesome-image-classification](https://github.com/weiaicunzai/awesome-image-classification)
 - [ChanChiChoi/awesome-automl](https://github.com/ChanChiChoi/awesome-automl)
+- [songzhaozhe/Model-Architecture-Search-Paper-List](https://github.com/songzhaozhe/Model-Architecture-Search-Paper-List)
