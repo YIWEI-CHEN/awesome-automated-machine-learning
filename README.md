@@ -102,12 +102,12 @@ Markdown format:
     - Han Cai, Jiacheng Yang,  Weinan Zhang, Song Han,Yong Yu. ICML 2018
     
 ### Evolutionary Algorithm
-- Large-Scale Evolution of Image Classifiers
+- Large-Scale Evolution of Image Classifiers (LargeEvoNet)
     [[pdf]](http://proceedings.mlr.press/v70/real17a)
     [[code]](https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet)
     - Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka Leon Suematsu, Jie Tan, Quoc V. Le, 
       Alex Kurakin. ICML 2017
-- Regularized Evolution for Image Classifier Architecture Search
+- Regularized Evolution for Image Classifier Architecture Search (AmoebaNet)
     [[pdf]](https://arxiv.org/abs/1802.01548)
     [[code]](https://github.com/tensorflow/tpu/tree/master/models/official/amoeba_net)
     - Esteban Real, Alok Aggarwal, Yanping Huang, Quoc V Le. AAAI 2019
@@ -132,7 +132,7 @@ Markdown format:
 | [Auto-Keras](https://arxiv.org/abs/1806.10282) | 3.6 | 0.5 | - | Bayesian |
 | [PNAS](http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf) | 3.41 | 225 | **3.2** | Bayesian |
 | [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 16,800 - 22,400 | 37.4 | reinforcement |
-| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1350 - 1800 | 27.6 | reinforcement |
+| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1,350 - 1,800 | 27.6 | reinforcement |
 | [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | **0.45** | 4.6 | reinforcement |
 | [PathLevel EAS](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf) | 2.3 | 8.33  | 14.3 | reinforcement |
 | [LargeEvoNet](http://proceedings.mlr.press/v70/real17a) | 5.4 | ? | 5.4 | evolutionary |
