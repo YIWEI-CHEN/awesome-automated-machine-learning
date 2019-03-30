@@ -125,7 +125,7 @@ Markdown format:
 ### Test Performance on CIFAR-10
 (Warning: the results are the best values directly chosen from their papers. Their testing environments might be different and unfair)
 
-|    Model   | Error (%) | GPU days | Params (Million) | Method |
+|    Model   | Error (%) | GPU hours | Params (Million) | Method |
 | ---------- | --------- | ------- | ---------------- | -------- |
 | [DensNet-BC](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | 3.46      | - | 25.6 | manual |
 | [PyramidNet +SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
@@ -139,7 +139,7 @@ Markdown format:
 | [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | ? | 34.9 | evolutionary |
 | [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | 3.4 | gradient-based |
 | [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
- * The best result only appears in the arXiv v2.
+ \* The best result only appears in the arXiv v2.
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
     - Thomas Elsken, Jan Hendrik Metzen, Frank Hutter. arXiv 1808
