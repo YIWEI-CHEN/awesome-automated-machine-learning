@@ -139,7 +139,8 @@ Markdown format:
 | [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | ? | 34.9 | evolutionary |
 | [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | 3.4 | gradient-based |
 | [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
- \* The best result only appears in the arXiv v2.
+ 
+ \* The best result only appears in its arXiv v2.
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
     - Thomas Elsken, Jan Hendrik Metzen, Frank Hutter. arXiv 1808
