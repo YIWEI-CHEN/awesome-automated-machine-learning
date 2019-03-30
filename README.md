@@ -125,7 +125,7 @@ Markdown format:
 ### Test Performance on CIFAR-10
 (Warning: the results are the best values directly chosen from their papers. Their testing environments might be different and unfair)
 
-|    Model   | Error (%) | GPU hours | Params (Million) | Method |
+|    Model   | Error (%) | GPU days | Params (Million) | Method |
 | ---------- | --------- | ------- | ---------------- | -------- |
 | [DensNet-BC](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | 3.46      | - | 25.6 | manual |
 | [PyramidNet +SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
