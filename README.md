@@ -119,8 +119,7 @@ Markdown format:
     - Han Cai, Ligeng Zhu, Song Han. ICLR 2019
 
 ### Test Performance on CIFAR-10
-(Warning: The following values are directly chosen from their papers. Their testing environments might be different and unfair.
-so, some of comparison might be meaningless. Please take the risk on your own.)
+(Warning: The following values are directly chosen from their papers. Their testing environments might be different and unfair, so some of comparison might be meaningless. Please take the risk on your own.)
 
 |    Model   | Error (%) | GPU days | Params (Million) | Method |
 | ---------- | --------- | ------- | ---------------- | -------- |
