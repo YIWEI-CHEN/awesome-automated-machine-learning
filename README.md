@@ -78,10 +78,6 @@ Markdown format:
     [[pdf]](https://arxiv.org/abs/1806.10282)
     [[code]](https://github.com/jhfjhfj1/autokeras)
     - Haifeng Jin, Qingquan Song, Xia Hu. arXiv 1806
-- Progressive Neural Architecture Search (PNAS)
-    [[pdf]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf)
-    [[code]](https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/pnasnet.py)
-    - Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy. ECCV 2018
 
 ### Reinforcement Learning
 - Neural Architecture Search with Reinforcement Learning (NAS)
@@ -128,17 +124,17 @@ Markdown format:
 |    Model   | Error (%) | GPU days | Params (Million) | Method |
 | ---------- | --------- | ------- | ---------------- | -------- |
 | [DensNet-BC](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | 3.46      | - | 25.6 | manual |
-| [PyramidNet +SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
+| [PyramidNet+SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
 | [Auto-Keras](https://arxiv.org/abs/1806.10282) | 3.6 | 0.5 | - | Bayesian |
-| [PNAS](http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf) | 3.41 | 225 | **3.2** | Bayesian |
 | [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 16,800 - 22,400 | 37.4 | reinforcement |
 | [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1,350 - 1,800 | 27.6 | reinforcement |
 | [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | **0.45** | 4.6 | reinforcement |
 | [PathLevel EAS](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf) | 2.3 | 8.33  | 14.3 | reinforcement |
 | [LargeEvoNet](http://proceedings.mlr.press/v70/real17a) | 5.4 | ? | 5.4 | evolutionary |
 | [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | ? | 34.9 | evolutionary |
-| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | 3.4 | gradient-based |
+| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | **3.4** | gradient-based |
 | [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
+ 
  \* The best result only appears in the arXiv v2.
 ## Survey
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
