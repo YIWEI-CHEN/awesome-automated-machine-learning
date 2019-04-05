@@ -132,7 +132,7 @@ Markdown format:
 | [PathLevel EAS](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf) | 2.3 | 8.33  | 14.3 | reinforcement |
 | [LargeEvoNet](http://proceedings.mlr.press/v70/real17a) | 5.4 | ? | 5.4 | evolutionary |
 | [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | ? | 34.9 | evolutionary |
-| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.83 | 4 | **3.4** | gradient-based |
+| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.76 | 4 | **3.3** | gradient-based |
 | [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
  
  \* The best result only appears in the arXiv v2.
