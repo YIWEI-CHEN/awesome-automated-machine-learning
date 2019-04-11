@@ -106,6 +106,7 @@ Markdown format:
 - Regularized Evolution for Image Classifier Architecture Search (AmoebaNet)
     [[pdf]](https://arxiv.org/abs/1802.01548)
     [[code]](https://github.com/tensorflow/tpu/tree/master/models/official/amoeba_net)
+    [[code]](https://colab.research.google.com/github/google-research/google-research/blob/master/evolution/regularized_evolution_algorithm/regularized_evolution.ipynb)
     - Esteban Real, Alok Aggarwal, Yanping Huang, Quoc V Le. AAAI 2019
     
 ### Gradient-based Optimization
