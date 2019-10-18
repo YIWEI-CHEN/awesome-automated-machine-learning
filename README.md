@@ -119,25 +119,9 @@ Markdown format:
     [[code]](https://github.com/MIT-HAN-LAB/ProxylessNAS)
     - Han Cai, Ligeng Zhu, Song Han. ICLR 2019
 
-### Test Performance on CIFAR-10
-(Warning: The following values are directly chosen from their papers. Their testing environments might be different and unfair, so some of comparison might be meaningless. Please take the risk on your own.)
-
-|    Model   | Error (%) | GPU days | Params (Million) | Method |
-| ---------- | --------- | ------- | ---------------- | -------- |
-| [DensNet-BC](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | 3.46      | - | 25.6 | manual |
-| [PyramidNet+SD](https://arxiv.org/abs/1802.02375) | 2.31 | - | 26 | manual |
-| [Auto-Keras](https://arxiv.org/abs/1806.10282) | 3.6 | 0.5 | - | Bayesian |
-| [NAS](https://arxiv.org/abs/1611.01578) | 3.65 | 16,800 - 22,400 | 37.4 | reinforcement |
-| [NASNet-A](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf) | 2.40 | 1,350 - 1,800 | 27.6 | reinforcement |
-| [ENAS](http://proceedings.mlr.press/v80/pham18a.html) | 2.89 | **0.45** | 4.6 | reinforcement |
-| [PathLevel EAS](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf) | 2.3 | 8.33  | 14.3 | reinforcement |
-| [LargeEvoNet](http://proceedings.mlr.press/v70/real17a) | 5.4 | ? | 5.4 | evolutionary |
-| [AmoebaNet-B*](https://arxiv.org/abs/1802.01548v2) | 2.13 | 3150 | 34.9 | evolutionary |
-| [DARTS](https://openreview.net/pdf?id=S1eYHoC5FX) | 2.76 | 4 | **3.3** | gradient-based |
-| [Proxyless-G](https://openreview.net/pdf?id=HylVB3AqYm) | **2.08** | ? | 5.7 | gradient-based |
- 
- \* The best result only appears in the arXiv v2.
 ## Survey
+- Techniques for Automated Machine Learning [[pdf]](https://arxiv.org/abs/1907.08908)
+    - Yi-Wei Chen, Qingquan Song, Xia Hu. arXiv 1907
 - Neural Architecture Search: A Survey [[pdf]](https://arxiv.org/abs/1808.05377)
     - Thomas Elsken, Jan Hendrik Metzen, Frank Hutter. arXiv 1808
 - Taking Human out of Learning Applications: A Survey on Automated Machine Learning 
